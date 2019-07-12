@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">StudyProject</string>
+    <string name="txt_contador">Contador</string>
 </resources>
