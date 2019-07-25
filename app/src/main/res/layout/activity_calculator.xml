@@ -5,7 +5,31 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         tools:context=".CalculatorActivity">
+
+    <EditText
+            android:id="@+id/editFirstNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:inputType="number"
+            android:hint="1º Número"
+
+            />
+
+    <EditText
+            android:id="@+id/editSecondNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:inputType="number"
+            android:hint="2º Número"
+
+            />
 
     <LinearLayout
             android:orientation="horizontal"
@@ -14,33 +38,69 @@
 
 
         <Button
+                android:id="@+id/btnAdd"
                 android:layout_weight="1"
                 android:text="+"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
+                android:background="@color/colorPrimary"
 
                 />
         <Button
+                android:id="@+id/btnSub"
                 android:layout_weight="1"
+                android:text="-"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:background="@color/colorPrimary"
 
                 />
         <Button
+                android:id="@+id/btnMul"
                 android:layout_weight="1"
+                android:text="*"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:background="@color/colorPrimary"
 
                 />
         <Button
+                android:id="@+id/btnDiv"
                 android:layout_weight="1"
+                android:text="/"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@color/colorPrimary"
                 />
 
 
     </LinearLayout>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resultado:"
+            android:textSize="24sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+
+            />
+
+    <EditText
+            android:id="@+id/editResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:enabled="false"
+
+
+            />
 
 </LinearLayout>
